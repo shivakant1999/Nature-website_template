@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:300,400');
+*{
+
+    outline: none !important;
+}
+body
+{
+    font-family: 'poppins', sans-serif;
+}
+header
+{
+position: relative;
+z-index: 1000000;
+}
+p
+{
+font-size: 1.15rem
+}
+.navbar
+{
+    background: transparent !important;
+    transition: 0.5s;
+}
+.navbar.scrolled
+{
+    background: #000 !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .active.nav-link, .navbar-light .navbar-nav .show.nav-link, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(#000);
+    background: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+ {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.banner
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height:100vh;
+    background: url(image9.jpg);
+}
+.banner:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000,transparent);
+    pointer-events: none
+}
+.banner:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#000,transparent);
+    pointer-events: none
+}
